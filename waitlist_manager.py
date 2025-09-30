@@ -144,4 +144,12 @@ Design Memo: Write Your Design Memo Include a 200–300 word response in your co
 - How does your list work?
 - What role does the head play?
 - When might a real engineer need a custom list like this?
+
+Design Memo:
+
+The watilist is linked to a list, which each element that in this case is a Node contains data and a pointer to the next element in the list, in this case each node represents a costumer on the waitlist. my first class the linkedlist manages all the list by keeping in reference the first element that is called the head, new customers that can be added in the fron or the end of the list depends on the position of the header. When a customer is removed, it searchs in the list until the node with the matching name is found, and the previous node’s pointer is updated to skip over it, removing that customer from the waitlist.
+
+The head plays a crucial role in this code because it always is keeping in reference the first element of the list, so without th ehead we wouldnt know which is the front or the end of the list.
+
+An engineer might need a custom link list like this in situations where more data is need it to insert or is more dynamic to keep updating a simgle list, what I looked is that in an example of this is to manage processes in an operating system, or creating more efficient data buffers for network packets
 '''
